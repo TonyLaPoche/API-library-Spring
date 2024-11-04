@@ -1,23 +1,20 @@
 package com.rpg.library.dto.book;
 
-import com.rpg.library.dto.author.AuthorDTO;
-import com.rpg.library.dto.kind.KindDTO;
-import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 public class BookDTO {
     private Long id;
 
@@ -31,11 +28,11 @@ public class BookDTO {
             message = "L'image doit être un lien HTTPS valide ou un chemin d'image local avec une extension valide.")
     private String image;
 
+    @NotBlank
     @NotNull
-    @Valid
-    private AuthorDTO author;
+    private String isbn;
 
-    @NotEmpty
-    @Valid
-    private List<KindDTO> kinds;
+    private Long authorId;
+
+    private List<Long> kindIds = new ArrayList<>();
 }

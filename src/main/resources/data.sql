@@ -5,6 +5,7 @@ VALUES ('Jules Verne', 'image_verne.jpg');
 INSERT INTO author (name, image)
 VALUES ('Émile Zola', 'image_zola.jpg');
 
+-- Kind insert
 INSERT INTO kind (name)
 VALUES ('Roman');
 INSERT INTO kind (name)
@@ -13,6 +14,68 @@ INSERT INTO kind (name)
 VALUES ('Aventure');
 INSERT INTO kind (name)
 VALUES ('Historique');
+INSERT INTO kind (name)
+VALUES ('Horreur');
+INSERT INTO kind (name)
+VALUES ('Fantasy');
+INSERT INTO kind (name)
+VALUES ('Biographie');
+INSERT INTO kind (name)
+VALUES ('Poésie');
+INSERT INTO kind (name)
+VALUES ('Thriller');
+INSERT INTO kind (name)
+VALUES ('Mystère');
+INSERT INTO kind (name)
+VALUES ('Essai');
+INSERT INTO kind (name)
+VALUES ('Développement personnel');
+INSERT INTO kind (name)
+VALUES ('Psychologie');
+INSERT INTO kind (name)
+VALUES ('Philosophie');
+INSERT INTO kind (name)
+VALUES ('Policier');
+INSERT INTO kind (name)
+VALUES ('Romance');
+INSERT INTO kind (name)
+VALUES ('Humour');
+INSERT INTO kind (name)
+VALUES ('Jeunesse');
+INSERT INTO kind (name)
+VALUES ('Science');
+INSERT INTO kind (name)
+VALUES ('Religion');
+INSERT INTO kind (name)
+VALUES ('Économie');
+INSERT INTO kind (name)
+VALUES ('Sociologie');
+INSERT INTO kind (name)
+VALUES ('Cuisine');
+INSERT INTO kind (name)
+VALUES ('Voyage');
+INSERT INTO kind (name)
+VALUES ('Fantastique');
+INSERT INTO kind (name)
+VALUES ('Drame');
+INSERT INTO kind (name)
+VALUES ('Art');
+INSERT INTO kind (name)
+VALUES ('Politique');
+INSERT INTO kind (name)
+VALUES ('Erotique');
+INSERT INTO kind (name)
+VALUES ('Contemporain');
+INSERT INTO kind (name)
+VALUES ('Classique');
+INSERT INTO kind (name)
+VALUES ('Conte');
+INSERT INTO kind (name)
+VALUES ('Manga');
+INSERT INTO kind (name)
+VALUES ('Bande dessinée');
+INSERT INTO kind (name)
+VALUES ('Nouvelles');
 
 INSERT INTO book (title, description, image, isbn, author_id)
 VALUES ('Les Misérables', 'Un roman historique sur la justice et la rédemption.', 'image_les_miserables.jpg',
